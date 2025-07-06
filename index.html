@@ -60,6 +60,7 @@
                 <ul class="flex flex-wrap justify-center space-x-6">
                     <li><a href="#home" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Home</a></li>
                     <li><a href="#solutions" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Solutions</a></li>
+                    <li><a href="#projects" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Projects</a></li>
                     <li><a href="#technology" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Technology</a></li>
                     <li><a href="#about" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">About Us</a></li>
                     <li><a href="#contact" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Contact</a></li>
@@ -101,7 +102,7 @@
                 </div>
                 <!-- Solution Card 2 -->
                 <div class="bg-green-50 border border-green-200 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out">
-                    <i class="fas fa-house-flood-water text-6xl text-green-600 mb-6 mx-auto block text-center"></i>
+                    <i class="fas fa-life-ring text-6xl text-green-600 mb-6 mx-auto block text-center"></i>
                     <h3 class="text-2xl font-semibold text-green-800 mb-4 text-center">Flood & Disaster Mitigation</h3>
                     <p class="text-gray-700 text-lg leading-relaxed text-center">
                         Real-time flood forecasting, early warning systems, and risk assessment tools to minimize damage and protect communities from natural hazards.
@@ -130,6 +131,34 @@
                     <p class="text-gray-700 text-lg leading-relaxed text-center">
                         AI-powered models to predict wildfire risk, track active fires, and optimize resource allocation for effective management and prevention.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+
+    <section id="projects" class="py-20 md:py-28 bg-gray-50 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-blue-700">Our Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer project-card">
+                    <img src="projects/SAP.png" alt="Project Screenshot 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-3">Satellite Analysis Platform</h3>
+                        <p class="text-gray-700 leading-relaxed project-description">
+                            This tool empowers users to analyze Earth observation data by allowing them to select specific datasets, like Landsat imagery, and apply various algorithms such as NDVI to assess vegetation health. Users define the analysis period with start and end dates, filter imagery by cloud coverage, and set the desired spatial scale, enabling insights from global to local levels. This approach facilitates environmental monitoring and research.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer project-card">
+                    <img src="projects/LandCoverClassifier.png" alt="Project Screenshot 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-green-800 mb-3">Land Cover Classifier</h3>
+                        <p class="text-gray-700 leading-relaxed project-description">
+                            You choose the satellite data you want to analyze, like Landsat 8/9 or Sentinel-2, and then specify the types of land features you want to identify. Using powerful AI methods the tool processes the data and shows you a clear map with different land cover classes, such as forests, water, or urban areas.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -213,6 +242,17 @@
         </div>
     </footer>
 
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[9999] opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white rounded-lg p-6 max-w-4xl mx-auto relative transform scale-95 transition-transform duration-300">
+            <button id="closeModal" class="absolute top-3 right-3 text-gray-700 hover:text-gray-900 text-3xl font-bold">&times;</button>
+            <img id="modalImage" src="" alt="Project Screenshot" class="max-w-full h-auto max-h-[80vh] object-contain mx-auto rounded-md shadow-lg">
+            <div id="modalContent" class="mt-4 text-center text-gray-700 text-lg">
+                <h3 id="modalTitle" class="font-bold text-2xl text-blue-700 mb-2"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Smooth scroll for navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
@@ -223,6 +263,63 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Modal Functionality
+        const projectModal = document.getElementById('projectModal');
+        const closeModalBtn = document.getElementById('closeModal');
+        const modalImage = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        // Function to open the modal
+        function openModal(imgSrc, title, description) {
+            modalImage.src = imgSrc;
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+
+            projectModal.classList.remove('opacity-0', 'pointer-events-none');
+            projectModal.classList.add('opacity-100', 'pointer-events-auto');
+            projectModal.querySelector('div').classList.remove('scale-95');
+            projectModal.querySelector('div').classList.add('scale-100');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            projectModal.classList.remove('opacity-100', 'pointer-events-auto');
+            projectModal.classList.add('opacity-0', 'pointer-events-none');
+            projectModal.querySelector('div').classList.remove('scale-100');
+            projectModal.querySelector('div').classList.add('scale-95');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Add click listeners to each project card
+        projectCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const imgSrc = this.querySelector('img').src;
+                const title = this.querySelector('h3').textContent;
+                const description = this.querySelector('.project-description').textContent;
+                openModal(imgSrc, title, description);
+            });
+        });
+
+        // Close modal when close button is clicked
+        closeModalBtn.addEventListener('click', closeModal);
+
+        // Close modal when clicking outside the modal content
+        projectModal.addEventListener('click', function(e) {
+            if (e.target === projectModal) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && projectModal.classList.contains('opacity-100')) {
+                closeModal();
+            }
         });
 
     </script>
