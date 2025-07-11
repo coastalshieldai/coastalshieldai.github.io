@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,30 @@
     <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuGWVZXzZ51i2LtmhO9R0QoJ8G9+D+J/1V9bA6p5a/1Lw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuGWVZXzZ51i2LtmhO9R0QoJ8G9+D+J/1V9bA6p5a/1Lw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* Custom CSS for Inter font */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7fafc; /* Light gray background */
+            background-color: #f7fafc;
+            /* Light gray background */
         }
+
         /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
+
         /* Custom message box styling */
         .message-box {
             position: fixed;
             top: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #4CAF50; /* Green */
+            background-color: #4CAF50;
+            /* Green */
             color: white;
             padding: 15px 25px;
             border-radius: 8px;
@@ -36,19 +43,22 @@
             visibility: hidden;
             transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
         }
+
         .message-box.show {
             opacity: 1;
             visibility: visible;
         }
     </style>
 </head>
+
 <body class="text-gray-800">
 
     <!-- Message Box Element -->
     <div id="messageBox" class="message-box"></div>
 
     <!-- Header Section -->
-    <header class="bg-gradient-to-r from-blue-700 to-green-600 text-white shadow-lg py-4 px-6 md:px-12 fixed w-full z-50 rounded-b-lg">
+    <header
+        class="bg-gradient-to-r from-blue-700 to-green-600 text-white shadow-lg py-4 px-6 md:px-12 fixed w-full z-50 rounded-b-lg">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <!-- Logo/Company Name -->
             <a href="#home" class="text-3xl font-bold tracking-tight mb-4 md:mb-0">
@@ -58,20 +68,35 @@
             <!-- Navigation Menu -->
             <nav>
                 <ul class="flex flex-wrap justify-center space-x-6">
-                    <li><a href="#home" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Home</a></li>
-                    <li><a href="#solutions" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Solutions</a></li>
-                    <li><a href="#projects" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Projects</a></li>
-                    <li><a href="#publications" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Publications</a></li>
-                    <li><a href="#technology" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Technology</a></li>
-                    <li><a href="#about" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">About Us</a></li>
-                    <li><a href="#contact" class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Contact</a></li>
+                    <li><a href="#home"
+                            class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Home</a>
+                    </li>
+                    <li><a href="#solutions"
+                            class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Solutions</a>
+                    </li>
+                    <li><a href="#projects"
+                            class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Projects</a>
+                    </li>
+                    <li><a href="#publications"
+                            class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Publications</a>
+                    </li>
+                    <li><a href="#technology"
+                            class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Technology</a>
+                    </li>
+                    <li><a href="#about"
+                            class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">About
+                            Us</a></li>
+                    <li><a href="#contact"
+                            class="hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative bg-gradient-to-br from-blue-800 to-green-700 text-white py-32 md:py-48 flex items-center justify-center text-center overflow-hidden rounded-b-xl shadow-2xl">
+    <section id="home"
+        class="relative bg-gradient-to-br from-blue-800 to-green-700 text-white py-32 md:py-48 flex items-center justify-center text-center overflow-hidden rounded-b-xl shadow-2xl">
         <!-- Background Overlay for subtle effect -->
         <div class="absolute inset-0 bg-black opacity-30"></div>
         <!-- Content -->
@@ -82,7 +107,8 @@
             <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-200">
                 Predicting and mitigating climate change, floods, and natural disasters through advanced AI.
             </p>
-            <a href="#solutions" class="inline-block bg-white text-blue-700 hover:bg-gray-200 transition duration-300 ease-in-out text-lg md:text-xl font-semibold py-4 px-10 rounded-full shadow-lg transform hover:scale-105 animate-bounce-in">
+            <a href="#solutions"
+                class="inline-block bg-white text-blue-700 hover:bg-gray-200 transition duration-300 ease-in-out text-lg md:text-xl font-semibold py-4 px-10 rounded-full shadow-lg transform hover:scale-105 animate-bounce-in">
                 Discover Our Solutions
             </a>
         </div>
@@ -94,43 +120,54 @@
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-blue-700">Our Comprehensive Solutions</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Solution Card 1 -->
-                <div class="bg-blue-50 border border-blue-200 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+                <div
+                    class="bg-blue-50 border border-blue-200 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out">
                     <i class="fas fa-cloud-sun text-6xl text-blue-600 mb-6 mx-auto block text-center"></i>
                     <h3 class="text-2xl font-semibold text-blue-800 mb-4 text-center">Climate Change Prediction</h3>
                     <p class="text-gray-700 text-lg leading-relaxed text-center">
-                        Leveraging vast datasets and deep learning to model future climate scenarios, identify vulnerable regions, and forecast long-term environmental shifts.
+                        Leveraging vast datasets and deep learning to model future climate scenarios, identify
+                        vulnerable regions, and forecast long-term environmental shifts.
                     </p>
                 </div>
                 <!-- Solution Card 2 -->
-                <div class="bg-green-50 border border-green-200 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+                <div
+                    class="bg-green-50 border border-green-200 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out">
                     <i class="fas fa-life-ring text-6xl text-green-600 mb-6 mx-auto block text-center"></i>
                     <h3 class="text-2xl font-semibold text-green-800 mb-4 text-center">Flood & Disaster Mitigation</h3>
                     <p class="text-gray-700 text-lg leading-relaxed text-center">
-                        Real-time flood forecasting, early warning systems, and risk assessment tools to minimize damage and protect communities from natural hazards.
+                        Real-time flood forecasting, early warning systems, and risk assessment tools to minimize damage
+                        and protect communities from natural hazards.
                     </p>
                 </div>
                 <!-- Solution Card 3 -->
-                <div class="bg-yellow-50 border border-yellow-200 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+                <div
+                    class="bg-yellow-50 border border-yellow-200 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out">
                     <i class="fas fa-satellite-dish text-6xl text-yellow-600 mb-6 mx-auto block text-center"></i>
                     <h3 class="text-2xl font-semibold text-yellow-800 mb-4 text-center">Real-Time Monitoring</h3>
                     <p class="text-gray-700 text-lg leading-relaxed text-center">
-                        Continuous environmental monitoring using IoT sensors and satellite imagery, providing instant alerts and actionable insights.
+                        Continuous environmental monitoring using IoT sensors and satellite imagery, providing instant
+                        alerts and actionable insights.
                     </p>
                 </div>
                 <!-- Solution Card 4 -->
-                <div class="bg-purple-50 border border-purple-200 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out md:col-span-2 lg:col-span-1">
+                <div
+                    class="bg-purple-50 border border-purple-200 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out md:col-span-2 lg:col-span-1">
                     <i class="fas fa-chart-line text-6xl text-purple-600 mb-6 mx-auto block text-center"></i>
                     <h3 class="text-2xl font-semibold text-purple-800 mb-4 text-center">Advanced Data Analytics</h3>
                     <p class="text-gray-700 text-lg leading-relaxed text-center">
-                        Transforming complex environmental data into understandable patterns and predictive models for informed decision-making.
+                        Transforming complex environmental data into understandable patterns and predictive models for
+                        informed decision-making.
                     </p>
                 </div>
                 <!-- Solution Card 5 -->
-                <div class="bg-red-50 border border-red-200 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+                <div
+                    class="bg-red-50 border border-red-200 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out">
                     <i class="fas fa-fire-extinguisher text-6xl text-red-600 mb-6 mx-auto block text-center"></i>
-                    <h3 class="text-2xl font-semibold text-red-800 mb-4 text-center">Wildfire Prediction & Management</h3>
+                    <h3 class="text-2xl font-semibold text-red-800 mb-4 text-center">Wildfire Prediction & Management
+                    </h3>
                     <p class="text-gray-700 text-lg leading-relaxed text-center">
-                        AI-powered models to predict wildfire risk, track active fires, and optimize resource allocation for effective management and prevention.
+                        AI-powered models to predict wildfire risk, track active fires, and optimize resource allocation
+                        for effective management and prevention.
                     </p>
                 </div>
             </div>
@@ -143,21 +180,47 @@
         <div class="container mx-auto">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-blue-700">Our Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer project-card">
+                <div class="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer project-card"
+                    data-images="projects/floodguard/home.png,projects/floodguard/overview.png,projects/floodguard/history.png,projects/floodguard/topography.png,projects/floodguard/forecast.png">
+                    <img src="projects/floodguard/home.png" alt="Coastal Monitoring Interface Screenshot"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-green-800 mb-3">AI-Powered FloodGuard Pro</h3>
+                        <p class="text-gray-700 leading-relaxed project-description">
+                            Analyze coastal details, historical flood data, and real-time sensor readings, mapping flood
+                            zones and forecasting events up to three days ahead. This system's property-level
+                            predictions are vital, empowering individual homeowners and businesses to take specific
+                            preventative actions, like sandbagging or moving valuables, thereby reducing potential
+                            damage. By monitoring weather and sea levels, it provides early warnings, helping
+                            communities prepare and minimize flood impact.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer project-card">
                     <img src="projects/SAP.png" alt="Project Screenshot 1" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold text-blue-800 mb-3">Satellite Analysis Platform</h3>
                         <p class="text-gray-700 leading-relaxed project-description">
-                            This tool empowers users to analyze Earth observation data by allowing them to select specific datasets, like Landsat imagery, and apply various algorithms such as NDVI to assess vegetation health. Users define the analysis period with start and end dates, filter imagery by cloud coverage, and set the desired spatial scale, enabling insights from global to local levels. This approach facilitates environmental monitoring and research.
+                            This tool empowers users to analyze Earth observation data by allowing them to select
+                            specific datasets, like Landsat imagery, and apply various algorithms such as NDVI to assess
+                            vegetation health. Users define the analysis period with start and end dates, filter imagery
+                            by cloud coverage, and set the desired spatial scale, enabling insights from global to local
+                            levels. This approach facilitates environmental monitoring and research.
                         </p>
                     </div>
                 </div>
-                <div class="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer project-card">
-                    <img src="projects/LandCoverClassifier.png" alt="Project Screenshot 2" class="w-full h-48 object-cover">
+                <div class="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer project-card"
+                    data-images="projects/LandCoverClassifier.png">
+                    <img src="projects/LandCoverClassifier.png" alt="Project Screenshot 2"
+                        class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold text-green-800 mb-3">Land Cover Classifier</h3>
                         <p class="text-gray-700 leading-relaxed project-description">
-                            You choose the satellite data you want to analyze, like Landsat 8/9 or Sentinel-2, and then specify the types of land features you want to identify. Using powerful AI methods the tool processes the data and shows you a clear map with different land cover classes, such as forests, water, or urban areas.
+                            You choose the satellite data you want to analyze, like Landsat 8/9 or Sentinel-2, and then
+                            specify the types of land features you want to identify. Using powerful AI methods the tool
+                            processes the data and shows you a clear map with different land cover classes, such as
+                            forests, water, or urban areas.
                         </p>
                     </div>
                 </div>
@@ -166,41 +229,62 @@
     </section>
 
     <!-- Research And Publications -->
-     <section id="publications" class="py-20 md:py-28 bg-white px-6">
+    <section id="publications" class="py-20 md:py-28 bg-white px-6">
         <div class="container mx-auto">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-green-700">Our Publications & Research</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="bg-blue-50 border border-blue-200 rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                <div
+                    class="bg-blue-50 border border-blue-200 rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
                     <h3 class="text-2xl font-semibold text-blue-800 mb-2">
-                        Application of Google earth engine python API and NAIP imagery for land use and land cover classification: A case study in Florida, USA
+                        Application of Google earth engine python API and NAIP imagery for land use and land cover
+                        classification: A case study in Florida, USA
                     </h3>
                     <p class="text-gray-700 leading-relaxed mb-4">
-                        Our research utilized the Google Earth Engine (GEE) Python API to classify 2017 aerial imagery of Florida's Panhandle, identifying eight LULC classes with high accuracy. This demonstrates that GEE offers a cost-effective and efficient solution for LULC analysis, making it particularly beneficial for global remote sensing projects with limited resources.
+                        Our research utilized the Google Earth Engine (GEE) Python API to classify 2017 aerial imagery
+                        of Florida's Panhandle, identifying eight LULC classes with high accuracy. This demonstrates
+                        that GEE offers a cost-effective and efficient solution for LULC analysis, making it
+                        particularly beneficial for global remote sensing projects with limited resources.
                     </p>
-                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S157495412100265X" target="_blank" class="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S157495412100265X" target="_blank"
+                        class="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
                         Read Publication <i class="fas fa-external-link-alt ml-2"></i>
                     </a>
                 </div>
-                <div class="bg-green-50 border border-green-200 rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                <div
+                    class="bg-green-50 border border-green-200 rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
                     <h3 class="text-2xl font-semibold text-green-800 mb-2">
                         Spatial Multicriteria Analysis Using a Google Earth
-Engine Based Web Tool
+                        Engine Based Web Tool
                     </h3>
                     <p class="text-gray-700 leading-relaxed mb-4">
-                        Researchers are using Google Earth Engine (GEE) for remote sensing due to its computational capabilities and capacity to handle large datasets. We've developed a GEE-based web tool that facilitates Spatial Multicriteria Analysis (SMA), a technique combining geographical data with value judgments for systematic decision-making. This tool is applicable to diverse projects such as risk assessment, site selection, and developing prioritization maps, allowing users to build decision models by identifying and weighting relevant factors.
+                        Researchers are using Google Earth Engine (GEE) for remote sensing due to its computational
+                        capabilities and capacity to handle large datasets. We've developed a GEE-based web tool that
+                        facilitates Spatial Multicriteria Analysis (SMA), a technique combining geographical data with
+                        value judgments for systematic decision-making. This tool is applicable to diverse projects such
+                        as risk assessment, site selection, and developing prioritization maps, allowing users to build
+                        decision models by identifying and weighting relevant factors.
                     </p>
-                    <a href="https://doi.org/10.20935/AL5897" target="_blank" class="inline-block bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+                    <a href="https://doi.org/10.20935/AL5897" target="_blank"
+                        class="inline-block bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition duration-300">
                         Read Publication <i class="fas fa-external-link-alt ml-2"></i>
                     </a>
                 </div>
-                <div class="bg-yellow-50 border border-yellow-200 rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                <div
+                    class="bg-yellow-50 border border-yellow-200 rounded-xl shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out">
                     <h3 class="text-2xl font-semibold text-yellow-800 mb-2">
-                        Sustainable land use planning in developing countries using GIS and multi-criteria analysis: a case study of Lalitpur district, Nepal
+                        Sustainable land use planning in developing countries using GIS and multi-criteria analysis: a
+                        case study of Lalitpur district, Nepal
                     </h3>
                     <p class="text-gray-700 leading-relaxed mb-4">
-                        Urbanization in Nepal has led to unplanned growth, prompting a study in Lalitpur District to identify suitable areas for urban development. Using GIS and Multi-criteria Analysis, including weighted overlay and AHP, researchers evaluated factors like proximity to infrastructure, flood sensitivity, and population density. The study categorized land into five suitability classes, highlighting the need to integrate environmental and risk factors into urban planning to preserve green spaces and water bodies for sustainable development.
+                        Urbanization in Nepal has led to unplanned growth, prompting a study in Lalitpur District to
+                        identify suitable areas for urban development. Using GIS and Multi-criteria Analysis, including
+                        weighted overlay and AHP, researchers evaluated factors like proximity to infrastructure, flood
+                        sensitivity, and population density. The study categorized land into five suitability classes,
+                        highlighting the need to integrate environmental and risk factors into urban planning to
+                        preserve green spaces and water bodies for sustainable development.
                     </p>
-                    <a href="https://link.springer.com/article/10.1007/s44213-025-00050-x" target="_blank" class="inline-block bg-yellow-600 text-white px-5 py-2 rounded-lg hover:bg-yellow-700 transition duration-300">
+                    <a href="https://link.springer.com/article/10.1007/s44213-025-00050-x" target="_blank"
+                        class="inline-block bg-yellow-600 text-white px-5 py-2 rounded-lg hover:bg-yellow-700 transition duration-300">
                         Read Publication <i class="fas fa-external-link-alt ml-2"></i>
                     </a>
                 </div>
@@ -235,7 +319,10 @@ Engine Based Web Tool
                 </div>
             </div>
             <p class="text-lg md:text-xl mt-12 max-w-4xl mx-auto leading-relaxed text-gray-700">
-                At Coastal Shield AI, we harness the power of state-of-the-art machine learning algorithms, vast environmental data analytics, and advanced artificial intelligence models. Our proprietary systems integrate satellite imagery, sensor networks, and meteorological data to deliver unparalleled accuracy in environmental predictions and real-time monitoring.
+                At Coastal Shield AI, we harness the power of state-of-the-art machine learning algorithms, vast
+                environmental data analytics, and advanced artificial intelligence models. Our proprietary systems
+                integrate satellite imagery, sensor networks, and meteorological data to deliver unparalleled accuracy
+                in environmental predictions and real-time monitoring.
             </p>
         </div>
     </section>
@@ -246,10 +333,16 @@ Engine Based Web Tool
             <h2 class="text-4xl md:text-5xl font-bold mb-16 text-blue-700">About Coastal Shield AI</h2>
             <div class="max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
                 <p class="mb-6">
-                    Coastal Shield AI was founded with a singular vision: to protect our planet and its inhabitants from the escalating threats of climate change and natural disasters. Our team comprises leading experts in AI, environmental science, data engineering, and meteorology, united by a passion for creating a more resilient future.
+                    Coastal Shield AI was founded with a singular vision: to protect our planet and its inhabitants from
+                    the escalating threats of climate change and natural disasters. Our team comprises leading experts
+                    in AI, environmental science, data engineering, and meteorology, united by a passion for creating a
+                    more resilient future.
                 </p>
                 <p class="mb-6">
-                    We believe that by transforming complex environmental data into actionable intelligence, we can empower governments, businesses, and communities to make informed decisions, implement effective mitigation strategies, and respond swiftly to unfolding crises. Our commitment to innovation and environmental stewardship drives everything we do.
+                    We believe that by transforming complex environmental data into actionable intelligence, we can
+                    empower governments, businesses, and communities to make informed decisions, implement effective
+                    mitigation strategies, and respond swiftly to unfolding crises. Our commitment to innovation and
+                    environmental stewardship drives everything we do.
                 </p>
                 <p>
                     Join us in building a safer, more sustainable world.
@@ -258,17 +351,24 @@ Engine Based Web Tool
         </div>
     </section>
     <!-- Contact Section -->
-    <section id="contact" class="py-20 md:py-28 bg-gradient-to-br from-blue-700 to-green-600 text-white px-6 rounded-t-xl shadow-2xl">
+    <section id="contact"
+        class="py-20 md:py-28 bg-gradient-to-br from-blue-700 to-green-600 text-white px-6 rounded-t-xl shadow-2xl">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-16">Connect with Us</h2>
             <div class="max-w-2xl mx-auto bg-white text-gray-800 p-10 rounded-xl shadow-xl flex flex-col items-center">
                 <p class="text-lg mb-8">
-                    Coastal Shield AI is always looking for innovative partnerships and collaborations. If you're a government agency, research institution, or a business passionate about environmental resilience, let's connect and explore how our AI solutions can address the world's most pressing environmental challenges.
+                    Coastal Shield AI is always looking for innovative partnerships and collaborations. If you're a
+                    government agency, research institution, or a business passionate about environmental resilience,
+                    let's connect and explore how our AI solutions can address the world's most pressing environmental
+                    challenges.
                 </p>
                 <i class="fas fa-handshake text-8xl text-green-600 mb-8 animate-pulse-fade"></i>
                 <h4 class="font-semibold text-3xl mb-4 text-blue-700">Reach Out to Our Team!</h4>
-                <p class="mb-2 text-xl"><i class="fas fa-envelope mr-3 text-blue-600"></i> <a href="mailto:admin@coastalsheildai.com" class="text-blue-600 hover:underline">admin@coastalshieldai.com</a></p>
-                <p class="text-base text-gray-600 mt-4">We look forward to hearing from you and discussing how we can create a safer, more sustainable future together.</p>
+                <p class="mb-2 text-xl"><i class="fas fa-envelope mr-3 text-blue-600"></i> <a
+                        href="mailto:admin@coastalsheildai.com"
+                        class="text-blue-600 hover:underline">admin@coastalshieldai.com</a></p>
+                <p class="text-base text-gray-600 mt-4">We look forward to hearing from you and discussing how we can
+                    create a safer, more sustainable future together.</p>
             </div>
         </div>
     </section>
@@ -285,15 +385,30 @@ Engine Based Web Tool
     </footer>
 
     <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[9999] opacity-0 pointer-events-none transition-opacity duration-300">
-        <div class="bg-white rounded-lg p-6 max-w-4xl mx-auto relative transform scale-95 transition-transform duration-300">
-            <button id="closeModal" class="absolute top-3 right-3 text-gray-700 hover:text-gray-900 text-3xl font-bold">&times;</button>
-            <img id="modalImage" src="" alt="Project Screenshot" class="max-w-full h-auto max-h-[80vh] object-contain mx-auto rounded-md shadow-lg">
-            <div id="modalContent" class="mt-4 text-center text-gray-700 text-lg">
-                <h3 id="modalTitle" class="font-bold text-2xl text-blue-700 mb-2"></h3>
-                <p id="modalDescription"></p>
-            </div>
+    <div class="bg-white rounded-lg p-6 max-w-2xl mx-auto relative transform scale-95 transition-transform duration-300
+                flex flex-col overflow-hidden" style="max-height: 90vh;">
+        
+        <button id="closeModal" class="absolute top-3 right-3 text-gray-700 hover:text-gray-900 text-3xl font-bold z-10">&times;</button>
+
+        <div id="modalSlider" class="relative w-full rounded-md shadow-lg overflow-hidden flex items-center justify-center flex-grow" style="max-height: calc(90vh - 150px);">
+            <div id="sliderImages" class="flex transition-transform duration-300 ease-in-out h-full items-center">
+                </div>
+            <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-r-lg hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 hidden">
+                <i class="fas fa-chevron-left text-xl"></i>
+            </button>
+            <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-l-lg hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 hidden">
+                <i class="fas fa-chevron-right text-xl"></i>
+            </button>
+            <div id="sliderDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 hidden">
+                </div>
+        </div>
+
+        <div id="modalContent" class="mt-4 text-center text-gray-700 text-lg flex-shrink-0 overflow-y-auto">
+            <h3 id="modalTitle" class="font-bold text-2xl text-blue-700 mb-2"></h3>
+            <p id="modalDescription"></p>
         </div>
     </div>
+</div>
 
     <script>
         // Smooth scroll for navigation links
@@ -310,55 +425,177 @@ Engine Based Web Tool
         // Modal Functionality
         const projectModal = document.getElementById('projectModal');
         const closeModalBtn = document.getElementById('closeModal');
-        const modalImage = document.getElementById('modalImage');
         const modalTitle = document.getElementById('modalTitle');
         const modalDescription = document.getElementById('modalDescription');
         const projectCards = document.querySelectorAll('.project-card');
 
-        // Function to open the modal
-        function openModal(imgSrc, title, description) {
-            modalImage.src = imgSrc;
+        // New variables for slider elements
+        const modalSlider = document.getElementById('modalSlider');
+        const sliderImagesContainer = document.getElementById('sliderImages');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const sliderDotsContainer = document.getElementById('sliderDots');
+
+        // These variables will be *reset* for each modal opening
+        let currentSlideIndex = 0;
+        let slides = [];
+
+        // Function to update the slider's display
+        function showSlide(index) {
+            if (slides.length === 0) return;
+
+            // Loop back to start or end if index goes out of bounds
+            if (index >= slides.length) {
+                currentSlideIndex = 0;
+            } else if (index < 0) {
+                currentSlideIndex = slides.length - 1;
+            } else {
+                currentSlideIndex = index;
+            }
+
+            // Apply transform to slide the images
+            sliderImagesContainer.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+
+            // Update dots for navigation
+            sliderDotsContainer.innerHTML = ''; // Clear existing dots
+            if (slides.length > 1) {
+                slides.forEach((_, i) => {
+                    const dot = document.createElement('span');
+                    dot.classList.add('w-3', 'h-3', 'bg-gray-400', 'rounded-full', 'cursor-pointer', 'transition-colors', 'duration-300');
+                    if (i === currentSlideIndex) {
+                        dot.classList.add('bg-blue-600'); // Highlight active dot
+                    }
+                    dot.addEventListener('click', () => showSlide(i)); // Click a dot to go to that slide
+                    sliderDotsContainer.appendChild(dot);
+                });
+            }
+
+        }
+
+        function nextSlide() {
+            showSlide(currentSlideIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlideIndex - 1);
+        }
+
+        // Function to open the modal (now handles single image or slider)
+        function openModal(title, description, imageURLs = []) {
             modalTitle.textContent = title;
             modalDescription.textContent = description;
 
+            // --- FIX FOR SLIDER INDEX ISSUE: RESET STATE FOR EVERY MODAL OPEN ---
+            sliderImagesContainer.innerHTML = ''; // Clear any existing images in the slider
+            slides = []; // Clear the array of image elements
+            currentSlideIndex = 0; // Reset the slide index to the beginning
+            // --- END FIX ---
+
+            // Hide slider controls by default
+            prevBtn.classList.add('hidden');
+            nextBtn.classList.add('hidden');
+            sliderDotsContainer.classList.add('hidden');
+
+            if (imageURLs.length > 1) {
+                // This project has multiple images for a slider
+                imageURLs.forEach(url => {
+                    const img = document.createElement('img');
+                    img.src = url;
+                    img.alt = title + ' screenshot'; // Descriptive alt text for accessibility
+                    // Tailwind classes for individual slider images:
+                    // w-full: takes full width of sliderImagesContainer's current view
+                    // h-full: takes full height of sliderImagesContainer (constrained by modalSlider max-height)
+                    // object-contain: scales image down to fit, maintaining aspect ratio (no cropping)
+                    // flex-shrink-0: prevents images from shrinking in the flex container
+                    img.classList.add('w-full', 'h-full', 'object-contain', 'flex-shrink-0');
+                    sliderImagesContainer.appendChild(img);
+                    slides.push(img);
+                });
+
+                // Show slider controls only if there are multiple slides
+                prevBtn.classList.remove('hidden');
+                nextBtn.classList.remove('hidden');
+                sliderDotsContainer.classList.remove('hidden');
+
+                showSlide(0); // Show the first slide
+                modalSlider.classList.remove('hidden'); // Ensure slider container is visible
+            } else {
+                sliderImagesContainer.style.cssText = '';
+                // For projects with a single image or no specific images, display one image
+                const img = document.createElement('img');
+                // Use the first image URL if available, otherwise a placeholder
+                img.src = imageURLs[0] || 'https://via.placeholder.com/600x400?text=No+Image';
+                img.alt = title + ' screenshot';
+                // Styling for single image: centered, contained within max height/width
+                img.classList.add('max-w-full', 'max-h-full', 'object-contain', 'mx-auto', 'rounded-md', 'shadow-lg');
+                sliderImagesContainer.appendChild(img); // Add the single image to the slider container
+                modalSlider.classList.remove('hidden'); // Ensure container is visible
+            }
+
+            // Common modal open logic
             projectModal.classList.remove('opacity-0', 'pointer-events-none');
             projectModal.classList.add('opacity-100', 'pointer-events-auto');
             projectModal.querySelector('div').classList.remove('scale-95');
             projectModal.querySelector('div').classList.add('scale-100');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
-        }
-
-        // Function to close the modal
-        function closeModal() {
-            projectModal.classList.remove('opacity-100', 'pointer-events-auto');
-            projectModal.classList.add('opacity-0', 'pointer-events-none');
-            projectModal.querySelector('div').classList.remove('scale-100');
-            projectModal.querySelector('div').classList.add('scale-95');
-            document.body.style.overflow = ''; // Restore scrolling
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
         }
 
         // Add click listeners to each project card
         projectCards.forEach(card => {
-            card.addEventListener('click', function() {
-                const imgSrc = this.querySelector('img').src;
+            card.addEventListener('click', function () {
+                const previewImgSrc = this.querySelector('img').src; // Get preview image for fallback
                 const title = this.querySelector('h3').textContent;
                 const description = this.querySelector('.project-description').textContent;
-                openModal(imgSrc, title, description);
+                const projectImagesData = this.dataset.images; // Get the comma-separated image URLs
+
+                let imagesToLoad = [];
+                if (projectImagesData) {
+                    imagesToLoad = projectImagesData.split(','); // Parse if data-images exists
+                } else {
+                    imagesToLoad.push(previewImgSrc); // Otherwise, use the preview image as the only one
+                }
+
+                openModal(title, description, imagesToLoad); // Call openModal with the collected data
             });
         });
+
+        // Attach slider navigation listeners
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+
+        // Function to close the modal
+        function closeModal() {
+            // Common modal close logic
+            projectModal.classList.remove('opacity-100', 'pointer-events-auto');
+            projectModal.classList.add('opacity-0', 'pointer-events-none');
+            projectModal.querySelector('div').classList.remove('scale-100');
+            projectModal.querySelector('div').classList.add('scale-95');
+            document.body.style.overflow = ''; // Restore background scrolling
+
+            // --- FIX FOR SLIDER INDEX ISSUE: CLEAN UP STATE ON CLOSE ---
+            sliderImagesContainer.innerHTML = ''; // Ensure all images are removed
+            slides = []; // Clear the image elements array
+            currentSlideIndex = 0; // Reset index to be safe, although openModal will reset it too
+            // --- END FIX ---
+
+            // Hide controls again
+            prevBtn.classList.add('hidden');
+            nextBtn.classList.add('hidden');
+            sliderDotsContainer.classList.add('hidden');
+        }
 
         // Close modal when close button is clicked
         closeModalBtn.addEventListener('click', closeModal);
 
         // Close modal when clicking outside the modal content
-        projectModal.addEventListener('click', function(e) {
+        projectModal.addEventListener('click', function (e) {
             if (e.target === projectModal) {
                 closeModal();
             }
         });
 
         // Close modal with Escape key
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape' && projectModal.classList.contains('opacity-100')) {
                 closeModal();
             }
@@ -366,4 +603,5 @@ Engine Based Web Tool
 
     </script>
 </body>
+
 </html>
