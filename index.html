@@ -96,12 +96,10 @@
 
     <!-- Hero Section -->
     <section id="home"
-        class="relative bg-gradient-to-br from-blue-800 to-green-700 text-white py-32 md:py-48 flex items-center justify-center text-center overflow-hidden rounded-b-xl shadow-2xl">
-        <!-- Background Overlay for subtle effect -->
+        class="relative bg-gradient-to-br from-blue-800 to-green-700 text-white pt-44 pb-32 md:py-48 flex items-center justify-center text-center overflow-hidden rounded-b-xl shadow-2xl">
         <div class="absolute inset-0 bg-black opacity-30"></div>
-        <!-- Content -->
-        <div class="relative z-10 px-4">
-            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+        <div class="relative z-10 px-3 sm:px-4">
+            <h1 class="text-3xl md:text-7xl font-extrabold leading-tight mb-6 animate-fade-in-up">
                 Pioneering Environmental Intelligence
             </h1>
             <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-200">
@@ -384,31 +382,37 @@
         </div>
     </footer>
 
-    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[9999] opacity-0 pointer-events-none transition-opacity duration-300">
-    <div class="bg-white rounded-lg p-6 max-w-2xl mx-auto relative transform scale-95 transition-transform duration-300
+    <div id="projectModal"
+        class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[9999] opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white rounded-lg p-6 max-w-2xl mx-auto relative transform scale-95 transition-transform duration-300
                 flex flex-col overflow-hidden" style="max-height: 90vh;">
-        
-        <button id="closeModal" class="absolute top-3 right-3 text-gray-700 hover:text-gray-900 text-3xl font-bold z-10">&times;</button>
 
-        <div id="modalSlider" class="relative w-full rounded-md shadow-lg overflow-hidden flex items-center justify-center flex-grow" style="max-height: calc(90vh - 150px);">
-            <div id="sliderImages" class="flex transition-transform duration-300 ease-in-out h-full items-center">
-                </div>
-            <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-r-lg hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 hidden">
-                <i class="fas fa-chevron-left text-xl"></i>
-            </button>
-            <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-l-lg hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 hidden">
-                <i class="fas fa-chevron-right text-xl"></i>
-            </button>
-            <div id="sliderDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 hidden">
-                </div>
-        </div>
+            <button id="closeModal"
+                class="absolute top-3 right-3 text-gray-700 hover:text-gray-900 text-3xl font-bold z-10">&times;</button>
 
-        <div id="modalContent" class="mt-4 text-center text-gray-700 text-lg flex-shrink-0 overflow-y-auto">
-            <h3 id="modalTitle" class="font-bold text-2xl text-blue-700 mb-2"></h3>
-            <p id="modalDescription"></p>
+            <div id="modalSlider"
+                class="relative w-full rounded-md shadow-lg overflow-hidden flex items-center justify-center flex-grow"
+                style="max-height: calc(90vh - 150px);">
+                <div id="sliderImages" class="flex transition-transform duration-300 ease-in-out h-full items-center">
+                </div>
+                <button id="prevBtn"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-r-lg hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 hidden">
+                    <i class="fas fa-chevron-left text-xl"></i>
+                </button>
+                <button id="nextBtn"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-l-lg hover:bg-opacity-75 focus:outline-none transition-opacity duration-300 hidden">
+                    <i class="fas fa-chevron-right text-xl"></i>
+                </button>
+                <div id="sliderDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 hidden">
+                </div>
+            </div>
+
+            <div id="modalContent" class="mt-4 text-center text-gray-700 text-lg flex-shrink-0 overflow-y-auto">
+                <h3 id="modalTitle" class="font-bold text-2xl text-blue-700 mb-2"></h3>
+                <p id="modalDescription"></p>
+            </div>
         </div>
     </div>
-</div>
 
     <script>
         // Smooth scroll for navigation links
